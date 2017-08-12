@@ -7,7 +7,7 @@ Simple slackbot.
 
 **Demo**
 
-![Demo](http://github.com/tuz358/slackbot/blob/master/slackbot_demo.png)
+![Demo](slackbot_demo.png)
 
 
 ## Features
@@ -39,7 +39,7 @@ var API_TOKEN string = "SET-YOUR_API_TOKEN"
 ```
 
 ## Author
-[@tuz358](https://github.com/tuz358)
+[tuz358](https://github.com/tuz358)
 
 ## License
 [GPLv3](https://github.com/tuz358/slackbot/blob/master/LICENSE)
