@@ -16,6 +16,7 @@ Simple slackbot.
 
 ## Requirements
 - [nlopes's Slack API](https://github.com/nlopes/slack)
+- Slack API token
 
 ## Usage
 ```
