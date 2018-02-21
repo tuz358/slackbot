@@ -19,21 +19,15 @@ PIDFILE=/var/run/$NAME.pid
 
 case "$1" in
   start)
-    #init_is_upstart()
     test -d ${SLACKBOT_RUN_DIR:-/var/run/slackbot} || mkdir -p ${SLACKBOT_RUN_DIR:-/var/run/slackbot}
-    #log_begin_msg "Starting $DESC: $NAME"
     log_daemon_msg "Starting $DESC: $NAME"
     start-stop-daemon --start --background  --pidfile $PIDFILE --make-pidfile --exec $DAEMON
     log_end_msg $?
     ;;
   stop)
-    #init_is_upstart()
-    #log_begin_msg "Stopping golang slackbot: $NAME"
     log_daemon_msg "Stopping golang slackbot: $NAME"
-    #echo -n "Stopping $DESC: "
     start-stop-daemon --stop --pidfile $PIDFILE --retry 10 #--exec $DAEMON
     log_end_msg $?
-    #echo "$NAME."
     ;;
   restart)
     test -d ${SLACKBOT_RUN_DIR:-/var/run/slackbot} || mkdir -p ${SLACKBOT_RUN_DIR:-/var/run/slackbot}
