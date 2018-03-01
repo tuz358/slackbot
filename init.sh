@@ -9,7 +9,7 @@
 # Short-Description: golang slackbot
 ### END INIT INFO
 
-DAEMON=/usr/sbin/slackbot
+DAEMON=/usr/local/bin/slackbot
 NAME=slackbot
 DESC=slackbot
 
